@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>КОНТаКТЫ</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250711141235">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&_v=20250711141235" type="text/javascript"></script>
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="/" class="header__logo logo"><img src="img/logo.webp" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">проекты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">НАС ВЫБИРАЮТ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">ОТЗЫВЫ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">сервис</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">БЛОГ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<div class="header__contacts header-contacts" data-da=".menu__body, 991.98,last">
+					<a href="tel:+79882001010" class="header-contacts__item _phone">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#tel"></use>
+						</svg>
+						<span>+7 (988) 200-10-10</span>
+					</a>
+					<div class="header-contacts__item _work">Пн-Пт 08:00-17:00</div>
+					<button type="button" data-popup="#call" class="header-contacts__item _call">
+						<strong>Обратная связь</strong>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#arrow"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">КОНТаКТЫ</span></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="section-intro">
+				<div class="section-intro__container">
+					<div class="contacts">
+						<div class="contacts__info">
+							<h1 class="contacts__tile title">КОНТаКТЫ</h1>
+							<div class="contacts__body">
+								<a href="tel:+79882001010" class="contacts__link">+7 (988) 200-10-10</a>
+								<a href="" class="contacts__link">zitron.com/ru</a>
+								<div class="contacts__text">152364, московская область,
+									г. Люберцы, ул. Куракинская , д. 12</div>
+							</div>
+							<button class="contacts__btn button button_outline" type="button">Оставить заявку</button>
+						</div>
+						<div class="contacts__map">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__img">
+						<img class="ibg" src="img/main/about/01.webp" alt="Image">
+					</div>
+					<div class="about__info">
+						<h2 class="about__title title title_white">О НАС</h2>
+						<div class="about__text">
+							<p> Компания ООО «Зитрон» создана в 2010 году и&nbsp;входит в&nbsp;состав компании ZITRON
+								Talleres S.A. –
+								международного лидера в&nbsp;области проектирования и&nbsp;изготовления вентиляционных
+								систем на базе
+								осевых вентиляторов для различный областей применения: шахты и&nbsp;рудники, тоннели
+								автодорожные
+								и&nbsp;железнодорожные, тоннели метрополитенов, Sky-diving комплексы.</p>
+
+							<p>
+								ООО «Зитрон» на протяжении нескольких десятилетий является надежным партнером горно-шахтных
+								предприятий, предлагая эффективные и&nbsp;надежные решения в&nbsp;области систем вентиляции
+								подземной
+								инфраструктуры рудников и&nbsp;шахт. За время работ на российском рынке, компания ООО
+								«Зитрон»
+								успешно завершила множество проектов изготовления, поставки и&nbsp;наладки вентиляционного
+								оборудования, включая комплексные решения для систем главного проветривания рудников и шахт,
+								оборудованных автоматизированными системами контроля и управления
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="section__container">
+					<h2 class="section__title title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+					<div class="feedback">
+						<div class="feedback__info">
+							<div class="feedback__text"><strong>Мы изготовим изделие с&nbsp;учетом всех необходимых вам
+									характеристик</strong></div>
+							<div class="feedback__text">Каждое изделие "Zitron" разрабатывается с&nbsp;учетом уникальных требований
+								заказчика и&nbsp;условий эксплуатации.
+							</div>
+							<div class="feedback__images">
+								<img class="feedback__img feedback__img_1" src="img/main/feedback-img-1.webp" alt="Image">
+								<img class="feedback__img feedback__img_2" src="img/main/feedback-img-2.webp" alt="Image">
+							</div>
+						</div>
+						<div class="feedback__form form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__input">
+										<label for="name" class="form__label">контактное лицо *</label>
+										<input class="input" id="name" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="company" class="form__label">компания / предприятие *</label>
+										<input class="input" id="company" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="mail" class="form__label">эл. почта *</label>
+										<input class="input" id="mail" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="phone" class="form__label">телефон *</label>
+										<input class="input" id="phone" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<button class="form__button button" type="submit">отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__contacts">
+						<a href="/" class="footer__logo logo"><img src="img/logo_f.webp" alt="Logo"></a>
+						<a href="" class="top-footer__message">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="" class="top-footer__message">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#wp"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="top-footer__info">
+						<span>Пн-Пт 08:00-17:00</span>
+						<a data-popup="#call">
+							Обратная связь
+							<svg>
+								<use xlink:href="img/icons/icons.svg#arrow"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__middle middle-footer">
+					<div class="middle-footer__contacts">
+						<a href="tel:+79882001010">+7 (988) 200-10-10</a>
+						<a href="mail:zitron.com/ru">zitron.com/ru</a>
+					</div>
+					<div class="middle-footer__address">152364, московская область,
+						г. Люберцы, ул. Куракинская , д. 12</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<ul class="bottom-footer__menu">
+						<li><a href="">главная</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">О нас</a></li>
+						<li><a href="">проекты</a></li>
+						<li><a href="">НАС ВЫБИРАЮТ</a></li>
+						<li><a href="">ОТЗЫВЫ</a></li>
+						<li><a href="">сервис</a></li>
+						<li><a href="">БЛОГ</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+					<div class="bottom-footer__policy">
+						<a href="">Политика конфиденциальности</a> © 2025
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="review-1" aria-hidden="true" class="popup popup_review">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-review">
+						<div class="popup-review__title">
+							Отзыв от
+							<small>ООО «Блок № 3 ш. «Анжерская-Южная»</small>
+						</div>
+						<div class="popup-review__img">
+							<img src="img/main/reviews/origi/01.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="review-2" aria-hidden="true" class="popup popup_review">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-review">
+						<div class="popup-review__title">
+							Благодарность от
+							<small>ООО «Блок № 3 ш. «Анжерская-Южная»</small>
+						</div>
+						<div class="popup-review__img">
+							<img src="img/main/reviews/origi/02.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="call" aria-hidden="true" class="popup popup_form">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.85" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square" />
+						<path opacity="0.85" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-form">
+						<h2 class="popup-form__title title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+						<div class="feedback">
+							<div class="feedback__info">
+								<div class="feedback__text"><strong>Мы изготовим изделие с&nbsp;учетом всех необходимых вам
+										характеристик</strong></div>
+								<div class="feedback__text">Каждое изделие "Zitron" разрабатывается с&nbsp;учетом уникальных требований
+									заказчика и&nbsp;условий эксплуатации.
+								</div>
+								<div class="feedback__images">
+									<img class="feedback__img feedback__img_1" src="img/main/feedback-img-1.webp" alt="Image">
+									<img class="feedback__img feedback__img_2" src="img/main/feedback-img-2.webp" alt="Image">
+								</div>
+							</div>
+							<div class="feedback__form form">
+								<form action="">
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-name" class="form__label">контактное лицо *</label>
+											<input class="input" id="p-name" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-company" class="form__label">компания / предприятие *</label>
+											<input class="input" id="p-company" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-mail" class="form__label">эл. почта *</label>
+											<input class="input" id="p-mail" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-phone" class="form__label">телефон *</label>
+											<input class="input" id="p-phone" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<button class="form__button button" type="submit">отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		ymaps.ready(function() {
+			const map = new ymaps.Map("map", {
+				center: [55.679463, 37.897056],
+				zoom: 16,
+				controls: ['zoomControl'],
+			});
+
+			const customPlacemark = new ymaps.Placemark(
+				[55.679463, 37.897056], {}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/icons/pin.svg',
+					iconImageSize: [70, 70], // размер иконки
+					iconImageOffset: [-35, -35], // смещение иконки относительно точки (центр по низу)
+				}
+			);
+
+			map.geoObjects.add(customPlacemark);
+			// адаптация карты при ресайзе окна
+			window.addEventListener('resize', () => {
+				map.container.fitToViewport();
+			});
+		});
+	</script>
+	<script src="js/app.min.js?_v=20250711141235"></script>
+
+</body>
+
+</html>

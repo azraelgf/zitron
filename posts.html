@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Статьи</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250711141235">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="/" class="header__logo logo"><img src="img/logo.webp" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">проекты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">НАС ВЫБИРАЮТ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">ОТЗЫВЫ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">сервис</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">БЛОГ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<div class="header__contacts header-contacts" data-da=".menu__body, 991.98,last">
+					<a href="tel:+79882001010" class="header-contacts__item _phone">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#tel"></use>
+						</svg>
+						<span>+7 (988) 200-10-10</span>
+					</a>
+					<div class="header-contacts__item _work">Пн-Пт 08:00-17:00</div>
+					<button type="button" data-popup="#call" class="header-contacts__item _call">
+						<strong>Обратная связь</strong>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#arrow"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<nav class="breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+						<li class="breadcrumbs__item"><span class="breadcrumbs__current">Статьи</span></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="section-intro">
+				<div class="section-intro__container">
+					<h1 class="section-intro__tile title title_center">Статьи</h1>
+					<div class="catalog-products">
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/01.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">11.03.2025</div>
+								<div class="item-blog__title">Обследование объекта и сбор данных</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/02.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">02.03.2025</div>
+								<div class="item-blog__title">Условия доставки и поставки включают</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/01.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">11.03.2025</div>
+								<div class="item-blog__title">Обследование объекта и сбор данных</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/02.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">02.03.2025</div>
+								<div class="item-blog__title">Условия доставки и поставки включают</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/01.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">11.03.2025</div>
+								<div class="item-blog__title">Обследование объекта и сбор данных</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/02.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">02.03.2025</div>
+								<div class="item-blog__title">Условия доставки и поставки включают</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+						<a href="" class="item-blog">
+							<div class="item-blog__img">
+								<img src="img/main/blog/01.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-blog__body">
+								<div class="item-blog__time">11.03.2025</div>
+								<div class="item-blog__title">Обследование объекта и сбор данных</div>
+								<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+									условий, назначения помещений и специфики производства. Проводится анализ объемов
+									воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+									заложить основу для точного проектирования.
+								</div>
+							</div>
+						</a>
+					</div>
+					<button class="section-intro__btn button" type="button">ЗАГРУТЬ ЕЩЕ +</button>
+				</div>
+			</section>
+			<section class="section section_dec bg-light">
+				<div class="section__container">
+					<h2 class="section__title title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+					<div class="feedback">
+						<div class="feedback__info">
+							<div class="feedback__text"><strong>Мы изготовим изделие с&nbsp;учетом всех необходимых вам
+									характеристик</strong></div>
+							<div class="feedback__text">Каждое изделие "Zitron" разрабатывается с&nbsp;учетом уникальных требований
+								заказчика и&nbsp;условий эксплуатации.
+							</div>
+							<div class="feedback__images">
+								<img class="feedback__img feedback__img_1" src="img/main/feedback-img-1.webp" alt="Image">
+								<img class="feedback__img feedback__img_2" src="img/main/feedback-img-2.webp" alt="Image">
+							</div>
+						</div>
+						<div class="feedback__form form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__input">
+										<label for="name" class="form__label">контактное лицо *</label>
+										<input class="input" id="name" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="company" class="form__label">компания / предприятие *</label>
+										<input class="input" id="company" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="mail" class="form__label">эл. почта *</label>
+										<input class="input" id="mail" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="phone" class="form__label">телефон *</label>
+										<input class="input" id="phone" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<button class="form__button button" type="submit">отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__contacts">
+						<a href="/" class="footer__logo logo"><img src="img/logo_f.webp" alt="Logo"></a>
+						<a href="" class="top-footer__message">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="" class="top-footer__message">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#wp"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="top-footer__info">
+						<span>Пн-Пт 08:00-17:00</span>
+						<a data-popup="#call">
+							Обратная связь
+							<svg>
+								<use xlink:href="img/icons/icons.svg#arrow"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__middle middle-footer">
+					<div class="middle-footer__contacts">
+						<a href="tel:+79882001010">+7 (988) 200-10-10</a>
+						<a href="mail:zitron.com/ru">zitron.com/ru</a>
+					</div>
+					<div class="middle-footer__address">152364, московская область,
+						г. Люберцы, ул. Куракинская , д. 12</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<ul class="bottom-footer__menu">
+						<li><a href="">главная</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">О нас</a></li>
+						<li><a href="">проекты</a></li>
+						<li><a href="">НАС ВЫБИРАЮТ</a></li>
+						<li><a href="">ОТЗЫВЫ</a></li>
+						<li><a href="">сервис</a></li>
+						<li><a href="">БЛОГ</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+					<div class="bottom-footer__policy">
+						<a href="">Политика конфиденциальности</a> © 2025
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="review-1" aria-hidden="true" class="popup popup_review">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-review">
+						<div class="popup-review__title">
+							Отзыв от
+							<small>ООО «Блок № 3 ш. «Анжерская-Южная»</small>
+						</div>
+						<div class="popup-review__img">
+							<img src="img/main/reviews/origi/01.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="review-2" aria-hidden="true" class="popup popup_review">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-review">
+						<div class="popup-review__title">
+							Благодарность от
+							<small>ООО «Блок № 3 ш. «Анжерская-Южная»</small>
+						</div>
+						<div class="popup-review__img">
+							<img src="img/main/reviews/origi/02.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="call" aria-hidden="true" class="popup popup_form">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.85" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square" />
+						<path opacity="0.85" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-form">
+						<h2 class="popup-form__title title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+						<div class="feedback">
+							<div class="feedback__info">
+								<div class="feedback__text"><strong>Мы изготовим изделие с&nbsp;учетом всех необходимых вам
+										характеристик</strong></div>
+								<div class="feedback__text">Каждое изделие "Zitron" разрабатывается с&nbsp;учетом уникальных требований
+									заказчика и&nbsp;условий эксплуатации.
+								</div>
+								<div class="feedback__images">
+									<img class="feedback__img feedback__img_1" src="img/main/feedback-img-1.webp" alt="Image">
+									<img class="feedback__img feedback__img_2" src="img/main/feedback-img-2.webp" alt="Image">
+								</div>
+							</div>
+							<div class="feedback__form form">
+								<form action="">
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-name" class="form__label">контактное лицо *</label>
+											<input class="input" id="p-name" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-company" class="form__label">компания / предприятие *</label>
+											<input class="input" id="p-company" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-mail" class="form__label">эл. почта *</label>
+											<input class="input" id="p-mail" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-phone" class="form__label">телефон *</label>
+											<input class="input" id="p-phone" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<button class="form__button button" type="submit">отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20250711141235"></script>
+
+</body>
+
+</html>

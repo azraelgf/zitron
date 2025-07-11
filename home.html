@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250711141235">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="/" class="header__logo logo"><img src="img/logo.webp" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">проекты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">НАС ВЫБИРАЮТ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">ОТЗЫВЫ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">сервис</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">БЛОГ</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<div class="header__contacts header-contacts" data-da=".menu__body, 991.98,last">
+					<a href="tel:+79882001010" class="header-contacts__item _phone">
+						<svg>
+							<use xlink:href="img/icons/icons.svg#tel"></use>
+						</svg>
+						<span>+7 (988) 200-10-10</span>
+					</a>
+					<div class="header-contacts__item _work">Пн-Пт 08:00-17:00</div>
+					<button type="button" data-popup="#call" class="header-contacts__item _call">
+						<strong>Обратная связь</strong>
+						<svg>
+							<use xlink:href="img/icons/icons.svg#arrow"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="swiper-controls">
+						<button type="button" class="swiper-button hero-button-prev swiper-button-prev">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#dropdown"></use>
+							</svg>
+						</button>
+						<button type="button" class="swiper-button hero-button-next swiper-button-next">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#dropdown"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="hero__body swiper">
+						<div class="hero__wrapper swiper-wrapper">
+							<div class="hero__slide swiper-slide">
+								<div class="item-hero" style="background-image: url(img/main/hero/01.webp);">
+									<div class="item-hero__container">
+										<div class="item-hero__content">
+											<h1 class="item-hero__title title title_white title_center">
+												<strong>эффективные решения</strong> <br>
+												для&nbsp;систем вентиляции
+											</h1>
+											<button class="button button_outline" data-popup="#call" type="button">Оставить заявку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hero__slide swiper-slide">
+								<div class="item-hero" style="background-image: url(img/main/hero/02.webp);">
+									<div class="item-hero__container">
+										<div class="item-hero__content">
+											<h1 class="item-hero__title title title_white title_center">
+												<strong>эффективные решения</strong> <br>
+												для&nbsp;систем вентиляции2
+											</h1>
+											<button class="button button_outline" data-popup="#call" type="button">Оставить заявку</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="section__container">
+					<h2 class="section__title title">КАТАЛОГ</h2>
+					<div class="catalog-items">
+						<a href="" class="item-catalog">
+							<div class="item-catalog__img">
+								<img src="img/main/catalog/01.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-catalog__title">
+								ШАХТЫ И&nbsp;ПОДЗЕМНЫЕ <br>
+								РУДНИКИ
+							</div>
+						</a>
+						<a href="" class="item-catalog">
+							<div class="item-catalog__img">
+								<img src="img/main/catalog/02.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-catalog__title">
+								АВТОДОРОЖНЫЕ
+								И&nbsp;ЖЕЛЕЗНОДОРОЖНЫЕ
+								тоннели
+
+							</div>
+						</a>
+						<a href="" class="item-catalog">
+							<div class="item-catalog__img">
+								<img src="img/main/catalog/03.webp" alt="Image" class="ibg">
+							</div>
+							<div class="item-catalog__title">
+								МЕТРОПОЛИТЕНЫ
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__img">
+						<img class="ibg" src="img/main/about/01.webp" alt="Image">
+					</div>
+					<div class="about__info">
+						<h2 class="about__title title title_white">О НАС</h2>
+						<div class="about__text">
+							<p> Компания ООО «Зитрон» создана в 2010 году и&nbsp;входит в&nbsp;состав компании ZITRON
+								Talleres S.A. –
+								международного лидера в&nbsp;области проектирования и&nbsp;изготовления вентиляционных
+								систем на базе
+								осевых вентиляторов для различный областей применения: шахты и&nbsp;рудники, тоннели
+								автодорожные
+								и&nbsp;железнодорожные, тоннели метрополитенов, Sky-diving комплексы.</p>
+
+							<p>
+								ООО «Зитрон» на протяжении нескольких десятилетий является надежным партнером горно-шахтных
+								предприятий, предлагая эффективные и&nbsp;надежные решения в&nbsp;области систем вентиляции
+								подземной
+								инфраструктуры рудников и&nbsp;шахт. За время работ на российском рынке, компания ООО
+								«Зитрон»
+								успешно завершила множество проектов изготовления, поставки и&nbsp;наладки вентиляционного
+								оборудования, включая комплексные решения для систем главного проветривания рудников и шахт,
+								оборудованных автоматизированными системами контроля и управления
+							</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<div class="section__container">
+					<h2 class="section__title title">ПРОЕКТИРОВАНИЕ
+						ПРОМЫШЛЕННОЙ
+						ВЕНТИЛЯЦИИ</h2>
+					<div class="text-block">
+						<p>
+							Наш завод производит и поставляет широкий спектр промышленного вентиляционного оборудования для
+							различных задач.
+						</p>
+						<ul>
+							<li>
+								В ассортименте представлены:
+							</li>
+							<li>
+								осевые и&nbsp;центробежные вентиляторы для основного воздухообмена;
+							</li>
+							<li>
+								системы для локальной вентиляции;
+							</li>
+							<li>
+								оборудование для вентиляции тоннелей;
+							</li>
+							<li>
+								струйные установки;
+							</li>
+							<li>
+								устройства для газоочистки;
+							</li>
+							<li>
+								вентиляторы специального назначения.
+							</li>
+						</ul>
+						<p>
+							Мы предлагаем современные вентиляционные решения, оснащённые интеллектуальными системами
+							автоматизации. У нас вы можете выбрать и приобрести оборудование с нужными характеристиками по
+							выгодной цене, а также воспользоваться профессиональным сервисом и технической поддержкой.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="section divider-bottom section_dec bg-light">
+				<div class="section__container">
+					<h2 class="section__title title title_smaller">ЭТАПЫ СОЗДАНИЯ ВЕНТИЛЯЦИИ
+						НА&nbsp;ПРОМЫШЛЕННЫХ
+						КОМПЛЕКСАХ/ПРЕДПРИЯТИЙ</h2>
+					<ul class="steps">
+						<li class="step">
+							<div class="step__inner">
+								<div class="step__title">Обследование объекта <br>
+									и&nbsp;сбор данных
+								</div>
+								<div class="step__text">
+									На начальном этапе специалисты выезжают на&nbsp;объект для оценки условий, назначения
+									помещений и&nbsp;специфики производства. Проводится анализ объемов воздухообмена,
+									температурных режимов и&nbsp;требований к&nbsp;качеству воздуха. Это позволяет заложить
+									основу для
+									точного проектирования.
+								</div>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__inner">
+								<div class="step__title">Проектирование <br>
+									вентиляционной системы
+								</div>
+								<div class="step__text">
+									На начальном этапе специалисты выезжают на&nbsp;объект для оценки условий, назначения
+									помещений и&nbsp;специфики производства. Проводится анализ объемов воздухообмена,
+									температурных режимов и&nbsp;требований к&nbsp;качеству воздуха. Это позволяет заложить
+									основу для
+									точного проектирования.
+								</div>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__inner">
+								<div class="step__title">Производство вентиляционного оборудования</div>
+								<div class="step__text">
+									После утверждения проекта запускается процесс изготовления. Производятся вентиляторы,
+									воздуховоды, элементы автоматики и крепления. Все компоненты изготавливаются в&nbsp;соответствии
+									с&nbsp;техническими требованиями и&nbsp;спецификацией проекта.
+								</div>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__inner">
+								<div class="step__title">Доставка <br>
+									и&nbsp;комплектация
+								</div>
+								<div class="step__text">
+									Оборудование и&nbsp;все необходимые материалы доставляются на&nbsp;объект точно в&nbsp;срок.
+									Проводится проверка комплектации, чтобы обеспечить бесперебойный процесс монтажа.
+								</div>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__inner">
+								<div class="step__title">Монтаж и&nbsp;пуско-наладочные работы</div>
+								<div class="step__text">
+									Профессиональная монтажная бригада устанавливает все элементы системы, подключает
+									автоматику и проводит настройку оборудования. После этого выполняется тестирование и&nbsp;наладка
+									вентиляции в&nbsp;реальных условиях.
+								</div>
+							</div>
+						</li>
+						<li class="step">
+							<div class="step__inner">
+								<div class="step__title">Ввод в&nbsp;эксплуатацию <br>
+									и&nbsp;техническое сопровождение
+								</div>
+								<div class="step__text">
+									После успешной проверки система передается заказчику. При необходимости проводится
+									обучение персонала. Также возможно заключение договора на дальнейшее обслуживание и&nbsp;регулярную
+									проверку работоспособности вентиляции.
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<div class="img-block">
+				<div class="img-block__container">
+					<div class="img-block__img">
+						<img src="img/main/big-img-1.webp" alt="Image" class="ibg">
+					</div>
+				</div>
+			</div>
+			<section class="cases">
+				<div class="cases__container">
+					<div class="cases__block">
+						<h2 class="cases__title title">РЕАЛИЗОВАННЫЕ ПРОЕКТЫ</h2>
+						<a href="" class="cases__btn button">все проекты</a>
+					</div>
+					<div class="cases__items">
+						<div class="item-case">
+							<div class="item-case__img">
+								<img src="img/main/cases/01.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="item-case__btn button button_opacity">
+								<span>проект 1</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="item-case">
+							<div class="item-case__img">
+								<img src="img/main/cases/02.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="item-case__btn button button_opacity">
+								<span>проект 2</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="item-case">
+							<div class="item-case__img">
+								<img src="img/main/cases/03.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="item-case__btn button button_opacity">
+								<span>проект 3</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="item-case">
+							<div class="item-case__img">
+								<img src="img/main/cases/04.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="item-case__btn button button_opacity">
+								<span>проект 4</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section section_dec bg-light">
+				<div class="section__container">
+					<h2 class="section__title title">Наши преимущества</h2>
+					<div class="text-block">
+						<p> Профессионализм команды. Мы обладаем многолетним опытом в&nbsp;сфере проектирования,
+							производства и&nbsp;установки вентиляционных систем, что гарантирует безупречное качество
+							готовой продукции.</p>
+						<ol>
+							<li>
+								Инновационные технологии. Используем современное оборудование и&nbsp;технологии, что
+								позволяет
+								реализовывать проекты любой сложности на&nbsp;высоком уровне.
+							</li>
+							<li>
+								Разнообразие продукции. Мы предлагаем широкий спектр вентиляционного оборудования:
+								промышленные
+								центробежные, осевые, крышные, вытяжные, радиальные и&nbsp;тягодутьевые вентиляторы, а&nbsp;также
+								системы дымоудаления и&nbsp;автоматику.
+							</li>
+							<li>
+								Строгий контроль качества. На всех этапах производства действует система контроля. Готовая
+								продукция
+								проходит проверку и&nbsp;обеспечивается долгосрочной гарантией.
+							</li>
+						</ol>
+						<p>
+							Кроме того, мы разрабатываем вентиляционные системы с&nbsp;учетом индивидуальных особенностей
+							каждого
+							объекта. Предоставляем профессиональные консультации, строго соблюдаем все государственные
+							стандарты
+							и&nbsp;нормы. Готовые решения сочетают в себе эффективность, надежность и&nbsp;экономичность в&nbsp;процессе
+							эксплуатации.
+						</p>
+
+
+					</div>
+				</div>
+			</section>
+
+			<section class="section partners">
+				<div class="partners__container">
+					<div class="section__container">
+						<h2 class="section__title title">НАС ВЫБИРАЮТ</h2>
+					</div>
+					<div class="partners__slider">
+						<div class="swiper-controls _accent">
+							<button type="button" class="swiper-button partner-button-prev swiper-button-prev">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</button>
+							<button type="button" class="swiper-button partner-button-next swiper-button-next">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="section__container">
+							<div class="partners__body swiper">
+								<div class="partners__wrapper swiper-wrapper">
+									<div class="partners__slide swiper-slide">
+										<div class=partners__img>
+											<img class="ibg" src="img/main/partners/01.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/02.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/03.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/04.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/05.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/06.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class=partners__img>
+											<img class="ibg" src="img/main/partners/01.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/02.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/03.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/04.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/05.webp" alt="Image">
+										</div>
+									</div>
+									<div class="partners__slide swiper-slide">
+										<div class="partners__img">
+											<img class="ibg" src="img/main/partners/06.webp" alt="Image">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section section_bottom">
+				<div class="section__container">
+					<h2 class="section__title title">С КАКИМИ
+						ОБЪЕКТАМИ
+						РАБОТАЕМ</h2>
+					<div class="objects">
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/objects/01.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>предприятиями</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/objects/02.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>торговыми центрами</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/objects/03.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>административными </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/objects/04.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>учебными заведениями</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews bg-accent bg-accent_dec">
+				<div class="reviews__container">
+					<div class="reviews__block">
+						<h2 class="reviews__title title">отзывы</h2>
+						<div class="swiper-controls">
+							<button type="button" class="swiper-button review-button-prev swiper-button-prev">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</button>
+							<button type="button" class="swiper-button review-button-next swiper-button-next">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="reviews__body swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="review">
+									<div class="review__header">
+										<div class="review__logo">
+											<img class="ibg--contain" src="img/main/reviews/01.webp" alt="Image">
+										</div>
+										<div class="review__title">
+											<strong>ООО «Блок № 3 ш. «Анжерская-Южная»</strong>
+											<small>генеральному директору ООО «Вентпром-Инжиниринг» <br>
+												Горшкову О.В., 2017 год</small>
+										</div>
+									</div>
+									<div class="review__body">
+										<strong>Отзыв о работе</strong>
+										<div class="review__text">
+											<p>за своевременное исполнение обязательств по поставке вентиляторов ВО-24/14АР
+												производства АО «Артемовский машиностроительный завод «Вентпром», что позволило
+												нашему предприятию своевременно запустить Лаву 7-2-4.</p>
+											<i>...</i>
+
+											<p class="review__author">Директор А.С. Аккушуков</p>
+										</div>
+									</div>
+									<button type="button" data-popup="#review-1" class="review__link">
+										Оригинал
+									</button>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="review">
+									<div class="review__header">
+										<div class="review__logo">
+											<img class="ibg--contain" src="img/main/reviews/02.webp" alt="Image">
+										</div>
+										<div class="review__title">
+											<strong>ООО «Блок № 3 ш. «Анжерская-Южная»</strong>
+											<small>генеральному директору ООО «Вентпром-Инжиниринг» <br>
+												Горшкову О.В., 2017 год</small>
+										</div>
+									</div>
+									<div class="review__body">
+										<strong>Благодарность</strong>
+										<div class="review__text">
+											<p>за своевременное исполнение обязательств по поставке вентиляторов ВО-24/14АР
+												производства АО «Артемовский машиностроительный завод «Вентпром», что позволило
+												нашему предприятию своевременно запустить Лаву 7-2-4.</p>
+											<i>...</i>
+
+											<p class="review__author">Директор А.С. Аккушуков</p>
+										</div>
+									</div>
+									<button type="button" data-popup="#review-2" class="review__link">
+										Оригинал
+									</button>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="review">
+									<div class="review__header">
+										<div class="review__logo">
+											<img class="ibg--contain" src="img/main/reviews/02.webp" alt="Image">
+										</div>
+										<div class="review__title">
+											<strong>ООО «Блок № 3 ш. «Анжерская-Южная»</strong>
+											<small>генеральному директору ООО «Вентпром-Инжиниринг» <br>
+												Горшкову О.В., 2017 год</small>
+										</div>
+									</div>
+									<div class="review__body">
+										<strong>Благодарность</strong>
+										<div class="review__text">
+											<p>за своевременное исполнение обязательств по поставке вентиляторов ВО-24/14АР
+												производства АО «Артемовский машиностроительный завод «Вентпром», что позволило
+												нашему предприятию своевременно запустить Лаву 7-2-4.</p>
+											<i>...</i>
+
+											<p class="review__author">Директор А.С. Аккушуков</p>
+										</div>
+									</div>
+									<button type="button" data-popup="#review-1" class="review__link">
+										Оригинал
+									</button>
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="review">
+									<div class="review__header">
+										<div class="review__logo">
+											<img class="ibg--contain" src="img/main/reviews/02.webp" alt="Image">
+										</div>
+										<div class="review__title">
+											<strong>ООО «Блок № 3 ш. «Анжерская-Южная»</strong>
+											<small>генеральному директору ООО «Вентпром-Инжиниринг» <br>
+												Горшкову О.В., 2017 год</small>
+										</div>
+									</div>
+									<div class="review__body">
+										<strong>Благодарность</strong>
+										<div class="review__text">
+											<p>за своевременное исполнение обязательств по поставке вентиляторов ВО-24/14АР
+												производства АО «Артемовский машиностроительный завод «Вентпром», что позволило
+												нашему предприятию своевременно запустить Лаву 7-2-4.</p>
+											<i>...</i>
+
+											<p class="review__author">Директор А.С. Аккушуков</p>
+										</div>
+									</div>
+									<button type="button" data-popup="#review-1" class="review__link">
+										Оригинал
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__container">
+					<h2 class="section__title title">сервис</h2>
+					<div class="objects _after">
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/services/01.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>предприятиями</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/services/02.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>торговыми центрами</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/services/03.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>административными </span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="object">
+							<div class="object__img">
+								<img src="img/main/services/04.webp" alt="Image" class="ibg">
+							</div>
+							<a href="" class="object__btn button button_opacity">
+								<span>учебными заведениями</span>
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<a href="" class="section__btn button">все услуги</a>
+				</div>
+			</section>
+			<div class="img-block">
+				<div class="img-block__container">
+					<div class="img-block__img">
+						<img src="img/main/big-img-2.webp" alt="Image" class="ibg">
+					</div>
+				</div>
+			</div>
+			<section class="section">
+				<div class="section__container">
+					<h2 class="section__title title">УСЛОВИЯ
+						ДОСТАВКИ/
+						ПОСТАВКИ</h2>
+					<div class="text-block">
+						<p> Условия доставки и поставки включают ряд важных аспектов, которые обеспечивают успешное
+							выполнение
+							сделки и удовлетворение потребностей клиента. Одним из ключевых моментов является срок доставки
+							—
+							время, в течение которого товар должен быть доставлен покупателю. Важно заранее оговорить срок,
+							чтобы клиент знал, когда ожидать свою посылку, и исключить возможные задержки, связанные с
+							транспортировкой, праздничными днями или непредвиденными обстоятельствами.</p>
+
+						<p> Не менее важен выбор способа доставки, который зависит от типа товара, его объема и срочности.
+							Это
+							может быть автомобильный, воздушный, морской или железнодорожный транспорт, а также
+							использование
+							курьерских служб для небольших партий товаров. При этом следует учитывать скорость, стоимость и
+							особенности транспортировки, чтобы выбрать оптимальный вариант.</p>
+
+						<p> Место доставки — это точка, где покупатель получит товар. Это может быть адрес клиента или
+							склад,
+							пункт самовывоза. Важно, чтобы покупатель был заранее информирован о месте и времени получения
+							товара, а также имел возможность отслеживать процесс доставки.</p>
+
+						<p> Стоимость доставки — еще один важный элемент, который может быть включен в общую стоимость
+							товара
+							или оплачен отдельно. В случае крупных и тяжеловесных товаров доставка может обойтись дороже, и
+							такие нюансы следует оговорить заранее, чтобы избежать недоразумений.</p>
+					</div>
+				</div>
+			</section>
+			<section class="blog bg-light bg-light_dec">
+				<div class="blog__container">
+					<div class="blog__block">
+						<h2 class="blog__title title">блог</h2>
+						<div class="swiper-controls _accent">
+							<button type="button" class="swiper-button blog-button-prev swiper-button-prev">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</button>
+							<button type="button" class="swiper-button blog-button-next swiper-button-next">
+								<svg>
+									<use xlink:href="img/icons/icons.svg#dropdown"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="blog__body swiper">
+						<div class="blog__wrapper swiper-wrapper">
+							<div class="blog__slide swiper-slide">
+								<a href="" class="item-blog">
+									<div class="item-blog__img">
+										<img src="img/main/blog/01.webp" alt="Image" class="ibg">
+									</div>
+									<div class="item-blog__body">
+										<div class="item-blog__time">11.03.2025</div>
+										<div class="item-blog__title">Обследование объекта и сбор данных</div>
+										<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+											условий, назначения помещений и специфики производства. Проводится анализ объемов
+											воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+											заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+											условий, назначения помещений и специфики производства. Проводится анализ объемов
+											воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+											заложить основу для точного проектирования.
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="blog__slide swiper-slide">
+								<a href="" class="item-blog">
+									<div class="item-blog__img">
+										<img src="img/main/blog/02.webp" alt="Image" class="ibg">
+									</div>
+									<div class="item-blog__body">
+										<div class="item-blog__time">08.03.2025</div>
+										<div class="item-blog__title">Условия доставки и поставки включают</div>
+										<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+											условий, назначения помещений и специфики производства. Проводится анализ объемов
+											воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+											заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+											условий, назначения помещений и специфики производства. Проводится анализ объемов
+											воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+											заложить основу для точного проектирования.
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="blog__slide swiper-slide">
+								<a href="" class="item-blog">
+									<div class="item-blog__img">
+										<img src="img/main/blog/03.webp" alt="Image" class="ibg">
+									</div>
+									<div class="item-blog__body">
+										<div class="item-blog__time">02.03.2025</div>
+										<div class="item-blog__title">Вентиляторы промышленные</div>
+										<div class="item-blog__text">На начальном этапе специалисты выезжают на объект для оценки
+											условий, назначения помещений и специфики производства. Проводится анализ объемов
+											воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+											заложить основу для точного проектирования.На начальном этапе специалисты выезжают на объект для оценки
+											условий, назначения помещений и специфики производства. Проводится анализ объемов
+											воздухообмена, температурных режимов и требований к качеству воздуха. Это позволяет
+											заложить основу для точного проектирования.
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__container">
+					<h2 class="section__title title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+					<div class="feedback">
+						<div class="feedback__info">
+							<div class="feedback__text"><strong>Мы изготовим изделие с&nbsp;учетом всех необходимых вам
+									характеристик</strong></div>
+							<div class="feedback__text">Каждое изделие "Zitron" разрабатывается с&nbsp;учетом уникальных требований
+								заказчика и&nbsp;условий эксплуатации.
+							</div>
+							<div class="feedback__images">
+								<img class="feedback__img feedback__img_1" src="img/main/feedback-img-1.webp" alt="Image">
+								<img class="feedback__img feedback__img_2" src="img/main/feedback-img-2.webp" alt="Image">
+							</div>
+						</div>
+						<div class="feedback__form form">
+							<form action="">
+								<div class="form__row">
+									<div class="form__input">
+										<label for="name" class="form__label">контактное лицо *</label>
+										<input class="input" id="name" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="company" class="form__label">компания / предприятие *</label>
+										<input class="input" id="company" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="mail" class="form__label">эл. почта *</label>
+										<input class="input" id="mail" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__input">
+										<label for="phone" class="form__label">телефон *</label>
+										<input class="input" id="phone" autocomplete="off" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="form__row">
+									<button class="form__button button" type="submit">отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__contacts">
+						<a href="/" class="footer__logo logo"><img src="img/logo_f.webp" alt="Logo"></a>
+						<a href="" class="top-footer__message">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#tg"></use>
+							</svg>
+						</a>
+						<a href="" class="top-footer__message">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#wp"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="top-footer__info">
+						<span>Пн-Пт 08:00-17:00</span>
+						<a data-popup="#call">
+							Обратная связь
+							<svg>
+								<use xlink:href="img/icons/icons.svg#arrow"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__middle middle-footer">
+					<div class="middle-footer__contacts">
+						<a href="tel:+79882001010">+7 (988) 200-10-10</a>
+						<a href="mail:zitron.com/ru">zitron.com/ru</a>
+					</div>
+					<div class="middle-footer__address">152364, московская область,
+						г. Люберцы, ул. Куракинская , д. 12</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<ul class="bottom-footer__menu">
+						<li><a href="">главная</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">О нас</a></li>
+						<li><a href="">проекты</a></li>
+						<li><a href="">НАС ВЫБИРАЮТ</a></li>
+						<li><a href="">ОТЗЫВЫ</a></li>
+						<li><a href="">сервис</a></li>
+						<li><a href="">БЛОГ</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+					<div class="bottom-footer__policy">
+						<a href="">Политика конфиденциальности</a> © 2025
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="call" aria-hidden="true" class="popup popup_form">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.85" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square" />
+						<path opacity="0.85" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-form">
+						<h2 class="popup-form__title title">ОСТАВЬТЕ ЗАЯВКУ</h2>
+						<div class="feedback">
+							<div class="feedback__info">
+								<div class="feedback__text"><strong>Мы изготовим изделие с&nbsp;учетом всех необходимых вам
+										характеристик</strong></div>
+								<div class="feedback__text">Каждое изделие "Zitron" разрабатывается с&nbsp;учетом уникальных требований
+									заказчика и&nbsp;условий эксплуатации.
+								</div>
+								<div class="feedback__images">
+									<img class="feedback__img feedback__img_1" src="img/main/feedback-img-1.webp" alt="Image">
+									<img class="feedback__img feedback__img_2" src="img/main/feedback-img-2.webp" alt="Image">
+								</div>
+							</div>
+							<div class="feedback__form form">
+								<form action="">
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-name" class="form__label">контактное лицо *</label>
+											<input class="input" id="p-name" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-company" class="form__label">компания / предприятие *</label>
+											<input class="input" id="p-company" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-mail" class="form__label">эл. почта *</label>
+											<input class="input" id="p-mail" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<div class="form__input">
+											<label for="p-phone" class="form__label">телефон *</label>
+											<input class="input" id="p-phone" autocomplete="off" type="text" placeholder="">
+										</div>
+									</div>
+									<div class="form__row">
+										<button class="form__button button" type="submit">отправить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review-1" aria-hidden="true" class="popup popup_review">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-review">
+						<div class="popup-review__title">
+							Отзыв от
+							<small>ООО «Блок № 3 ш. «Анжерская-Южная»</small>
+						</div>
+						<div class="popup-review__img">
+							<img src="img/main/reviews/origi/01.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="review-2" aria-hidden="true" class="popup popup_review">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+						<path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke-width="1.5" stroke="#fff" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<div class="popup-review">
+						<div class="popup-review__title">
+							Благодарность от
+							<small>ООО «Блок № 3 ш. «Анжерская-Южная»</small>
+						</div>
+						<div class="popup-review__img">
+							<img src="img/main/reviews/origi/02.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20250711141235"></script>
+
+</body>
+
+</html>
