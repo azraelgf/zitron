@@ -4890,6 +4890,17 @@
     }
     const da = new DynamicAdapt("max");
     da.init();
+    function checkCookies() {
+        let cookieDate = localStorage.getItem("cookieDate");
+        let cookieNotification = document.getElementById("cookie_notification");
+        let cookieBtn = cookieNotification.querySelector(".cookie_accept");
+        if (!cookieDate || +cookieDate + 31536e6 < Date.now()) cookieNotification.classList.add("show");
+        cookieBtn.addEventListener("click", (function() {
+            localStorage.setItem("cookieDate", Date.now());
+            cookieNotification.classList.remove("show");
+        }));
+    }
+    if (document.getElementById("cookie_notification")) checkCookies();
     window["FLS"] = false;
     addLoadedClass();
     menuInit();

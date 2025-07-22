@@ -738,6 +738,33 @@ body::after {
 .bg-accent_dec {
   position: relative
 }
+.cookie {
+  color: #fff;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  display: none;
+  justify-content: space-between;
+  gap: 1.25rem
+}
+.cookie.show {
+  display: flex
+}
+.cookie__content {
+  line-height: 1.3
+}
+.cookie__content p+p {
+  margin-top: .375rem
+}
+.cookie__action {
+  flex: 0 0 30%
+}
+.cookie__btn {
+  min-width: 100%
+}
 .menu__list {
   display: flex;
   align-items: center
@@ -1729,6 +1756,18 @@ body::after {
   .divider-bottom {
     margin-bottom: 7.5rem
   }
+  .cookie {
+    padding-top: 4rem
+  }
+  .cookie {
+    padding-bottom: 4rem
+  }
+  .cookie {
+    padding-left: 3.75rem
+  }
+  .cookie {
+    padding-right: 3.75rem
+  }
   .middle-footer__contacts a {
     font-size: 2.5rem
   }
@@ -1900,6 +1939,9 @@ body::after {
     -moz-column-gap: 1.875rem;
     column-gap: 1.875rem
   }
+  .cookie {
+    font-size: 1.25rem
+  }
   .menu__list {
     gap: 1.875rem
   }
@@ -1926,6 +1968,11 @@ body::after {
   }
   #map {
     height: 40.875rem
+  }
+}
+@media (max-width:90em) {
+  .cookie {
+    font-size: .875rem
   }
 }
 @media (max-width:85em) {
@@ -2175,6 +2222,9 @@ body::after {
   .section {
     padding: 3.75rem 0 5rem
   }
+  .cookie {
+    flex-wrap: wrap
+  }
   .top-footer {
     flex-wrap: wrap
   }
@@ -2386,6 +2436,18 @@ body::after {
   }
   .divider-bottom {
     margin-bottom: 5rem
+  }
+  .cookie {
+    padding-top: 1.875rem
+  }
+  .cookie {
+    padding-bottom: 1.875rem
+  }
+  .cookie {
+    padding-left: 1.25rem
+  }
+  .cookie {
+    padding-right: 1.25rem
   }
   .middle-footer__contacts a {
     font-size: 1.25rem
@@ -2632,6 +2694,18 @@ body::after {
   .divider-bottom {
     margin-bottom: clamp(5rem ,3.9772727273rem + 4.5454545455vw ,7.5rem)
   }
+  .cookie {
+    padding-top: clamp(1.875rem ,1.0056818182rem + 3.8636363636vw ,4rem)
+  }
+  .cookie {
+    padding-bottom: clamp(1.875rem ,1.0056818182rem + 3.8636363636vw ,4rem)
+  }
+  .cookie {
+    padding-left: clamp(1.25rem ,.2272727273rem + 4.5454545455vw ,3.75rem)
+  }
+  .cookie {
+    padding-right: clamp(1.25rem ,.2272727273rem + 4.5454545455vw ,3.75rem)
+  }
   .middle-footer__contacts a {
     font-size: clamp(1.25rem ,.7386363636rem + 2.2727272727vw ,2.5rem)
   }
@@ -2812,6 +2886,11 @@ body::after {
   }
   .item-hero__container {
     min-height: clamp(35rem ,3.75rem + 41.6666666667vw ,53.75rem)
+  }
+}
+@media (min-width:90em)and (max-width:120em) {
+  .cookie {
+    font-size: clamp(.875rem ,-.25rem + 1.25vw ,1.25rem)
   }
 }
 @media (min-width:85em)and (max-width:120em) {
